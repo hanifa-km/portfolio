@@ -1,0 +1,172 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: gainsboro;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;}
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 2%;
+    align-items: center;
+}
+.name{
+    margin-right: 18px;
+}
+.navbar{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin-right: 30px;
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.navbar a:hover{
+    color: navy;
+}
+
+/* intro */
+figure{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20vh 20vw;
+    font-size: 24px;
+    figcaption{
+        animation: slideBottom 3s;
+        height: auto;
+    }
+    }
+    img{
+        width: 300px;
+        height: auto;
+        box-shadow: 5px 5px 15px black;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 230px;
+        animation: slide 3s;
+        animation-iteration-count: 1;
+    }
+
+@keyframes slide{
+       0%{transform: translateX(-50%);}
+}
+@keyframes slideBottom{
+    0%{transform: translateY(100%)}
+
+}
+
+/* titles */
+.title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 4vh;
+    margin-top: 20%;
+    color: navy;
+}
+/* skills */
+.skills{
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+}
+.skills img{
+    height: auto;
+    width: 20vw;
+    border-radius: 8%;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px black;
+}
+/* about */
+.p1{
+    font-size: 24px;
+    padding: 4%;
+    margin: 8%;
+    border-radius: 40px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px black;
+}
+
+/*contact*/
+.p2{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+.email{
+    text-align: center;
+    a{
+        border: 2px solid black;
+        padding: 10px 12px;
+        border-radius:25px;
+        text-decoration: none;
+        color: black;
+        box-shadow: 0 4px 8px black;
+        
+    }
+    a:hover{
+        color: navy;
+    }
+}
+.socials{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 4vh;
+    margin-bottom: 8%;
+}
+.icons{
+    height: 50px;
+    width: 50px;
+    border-radius: 25%;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px black;
+} 
+/* footer */
+#footerContent{
+    text-align: center;
+    margin: 15px;
+}
+
+
+@media (max-width: 600px){
+    *{
+        font-size: 16px;
+    }
+    header{
+        align-items: center;
+        margin: 4px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .navbar{
+        gap: 20px;
+        justify-content: center;}
+    .name{
+            font-size: 20px;
+        }
+   
+    figure{
+            flex-direction: column;
+            text-align: center;
+        }
+    img{
+            width: 100%;
+            max-width: 200px;
+        }
+    .icons{
+        height: 30px;
+        width: 30px;
+    }
+    }
+    
